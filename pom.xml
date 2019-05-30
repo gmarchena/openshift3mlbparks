@@ -8,7 +8,7 @@
 	<repositories>
 		<repository>
 			<id>eap</id>
-			<url>https://maven.repository.redhat.com/techpreview/all</url>
+			<url>https://mvnrepository.com/artifact/org.wildfly/wildfly-ejb3</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -20,7 +20,7 @@
 	<pluginRepositories>
 		<pluginRepository>
 			<id>eap</id>
-			<url>https://maven.repository.redhat.com/techpreview/all</url>
+			<url>https://mvnrepository.com/artifact/org.wildfly/wildfly-ejb3</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -47,9 +47,9 @@
 			the file and examine the single directory under jboss-eap-*-maven-repository/org/jboss/spec/jboss-javaee-6.0 
 			[1] https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=appplatform&productChanged=yes" -->
 		<dependency>
-			<groupId>org.jboss.spec</groupId>
-			<artifactId>jboss-javaee-6.0</artifactId>
-			<version>3.0.2.Final-redhat-4</version>
+			<groupId>org.wildfly</groupId>
+			<artifactId>wildfly-ejb3</artifactId>
+			<version>13.0.0.Final</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
@@ -58,6 +58,12 @@
 			<artifactId>mongo-java-driver</artifactId>
 			<version>3.2.0</version>
 		</dependency>
+		<dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
 	</dependencies>
 	<profiles>
 		<profile>
