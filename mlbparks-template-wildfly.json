@@ -399,7 +399,7 @@
          "metadata": {
             "name": "${APPLICATION_NAME}",
             "annotations": {
-               "description": "The web server's http port"
+               "description": "The web server's http puert"
             }
          },
          "spec": {
